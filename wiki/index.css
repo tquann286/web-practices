@@ -240,8 +240,219 @@ input[type='number'] {
 }
 
 /* Styles */
-#container {
-  width: 800px;
-  height: 100vh;
-  margin: 0 auto;
+body {
+  display: flex;
 }
+
+#container {
+  min-height: 100vh;
+  flex: 1;
+  margin-left: 180px;
+}
+
+.sidebar {
+  width: 180px;
+  height: 100vh;
+  background-color: #8f8f8f;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background-color: #1f3a3d;
+  margin: 18px auto;
+}
+
+.main-category {
+  display: grid;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.category-item {
+  height: 18px;
+  width: 80%;
+  background-color: #412227;
+}
+
+.divider {
+  margin: 8px 0;
+  width: 75%;
+  height: 1px;
+  background-color: #7d7f7d;
+  margin-left: 14px;
+}
+
+.collapse {
+  display: grid;
+  gap: 8px;
+  margin-left: 28px;
+}
+
+.collapse-heading {
+  height: 24px;
+  width: 66%;
+  background-color: #063971;
+}
+
+.collapse-heading.active {
+  background-color: #587246;
+}
+
+.collapse-item {
+  height: 18px;
+  width: 75%;
+  background-color: #063971;
+}
+
+/* Custom scrollbar */
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Track */
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #8f8f8f;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #39352a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+}
+
+.left-header,
+.right-section-2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.left-header > div,
+.right-section-2 > div {
+  width: 30px;
+  height: 15px;
+  background-color: #cfd3cd;
+}
+
+.right-section-2 > div {
+  width: 38px;
+}
+
+.left-header > div:not(:first-child),
+.right-section-2 > div:not(:first-child) {
+  border-left-width: 1px;
+  border-color: #282828;
+  border-style: solid;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section-1 {
+  display: flex;
+  margin-bottom: 22px;
+  align-self: flex-end;
+}
+
+.right-section-1 > div {
+  width: 30px;
+  height: 15px;
+  background-color: #734222;
+}
+
+.right-section-1 > div:first-child {
+  width: 45px;
+  margin-right: 8px;
+}
+
+.search-box {
+  width: 180px;
+  height: 25px;
+  background-color: #f8f32b;
+  margin-left: 8px;
+}
+
+.main {
+  min-height: calc(100vh - 78px);
+  border-width: 1px;
+  border-color: #2271b3;
+  border-style: solid;
+  padding: 12px 18px;
+}
+
+.section-1 {
+  height: 100px;
+  background-color: #a5a5a5;
+}
+
+.section-2 {
+  display: flex;
+}
+
+.child-1 {
+  width: 60%;
+  height: 300px;
+  background-color: #33694e;
+}
+
+.child-2 {
+  flex: 1;
+  height: 300px;
+  background-color: #216ec1;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+}
+
+.section-3 > div {
+  flex: 1;
+  height: 200px;
+  background-color: #a553e3;
+}
+
+.section-4 {
+  height: 160px;
+  background-color: #719524;
+}
+
+.section-5 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  height: 200px;
+  background-color: #be3f70;
+}
+
+.section-6 {
+  height: 180px;
+  background-color: #cd532a;
+}
+
+.child-3 {
+  width: 30%;
+  height: 100%;
+  background-color: #cd532a;
+}
+
+.child-4 {
+  width: 60%;
+  height: 100%;
+  background-color: #2dcd2a;
+}
+
