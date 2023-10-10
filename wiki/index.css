@@ -240,20 +240,24 @@ input[type='number'] {
 }
 
 /* Styles */
-body {
+wrapper {
   display: flex;
+}
+
+:root {
+  --sider-width: 180px;
 }
 
 #container {
   min-height: 100vh;
   flex: 1;
-  margin-left: 180px;
+  margin-left: var(--sider-width);
 }
 
 .sidebar {
-  width: 180px;
+  width: var(--sider-width);
   height: 100vh;
-  background-color: #8f8f8f;
+  background-color: #b8b3b3;
   overflow-y: auto;
   position: fixed;
 }
@@ -315,7 +319,7 @@ body {
 }
 
 .sidebar::-webkit-scrollbar-track {
-  background: #8f8f8f;
+  background: #b8b3b3;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
@@ -454,5 +458,10 @@ body {
   width: 60%;
   height: 100%;
   background-color: #2dcd2a;
+}
+
+.footer {
+  height: 80px;
+  background-color: #b8b3b3;
 }
 
