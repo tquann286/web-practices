@@ -240,12 +240,12 @@ input[type='number'] {
 }
 
 /* Styles */
-wrapper {
-  display: flex;
-}
-
 :root {
   --sider-width: 180px;
+}
+
+.wrapper {
+  display: flex;
 }
 
 #container {

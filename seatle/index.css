@@ -1,0 +1,329 @@
+/* Reset CSS */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a,
+div,
+span,
+button {
+  outline: none;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+a {
+  background-color: transparent;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+button,
+input[type='button'] {
+  width: auto;
+  overflow: visible;
+}
+
+.clickable,
+label,
+input[type='button'],
+input[type='submit'],
+input[type='file'],
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Styles */
+div[class^='section-'] {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper-1 {
+  background-color: #850813;
+}
+
+.section-1 {
+  height: 120px;
+  background-color: #6d3f5b;
+}
+
+.wrapper-2 {
+  background-color: #37302d;
+}
+
+.section-2 {
+  height: 220px;
+  background-color: #4058b9;
+}
+
+.wrapper-3 {
+  background-color: #e4d7c7;
+}
+
+.section-3 {
+  height: 420px;
+  background-color: #40b94c;
+}
+
+.child-1 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  height: 50%;
+}
+
+.child-2 {
+  height: 50%;
+}
+
+.sub-child-1 {
+  width: 60%;
+  height: 100%;
+  background-color: #6d3f5b;
+}
+
+.footer {
+  background-color: #7d0711;
+}
+
+.section-4 {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-1 {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  height: 60%;
+}
+
+.footer-2 {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-child-2 {
+  width: 25%;
+  height: 80%;
+  background-color: #37302d;
+}
+
+.sub-child-3 {
+  width: 20%;
+  height: 100%;
+  background-color: #16c6a6;
+}
+
+.sub-child-4 {
+  width: 15%;
+  height: 100%;
+}
