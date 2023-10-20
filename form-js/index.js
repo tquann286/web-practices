@@ -56,8 +56,6 @@ submitBtn.onclick = (e) => {
     return
   }
 
-  record.id = results.length
-
   results.push(record)
   renderList(results)
   form.reset()
