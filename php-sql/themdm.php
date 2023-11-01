@@ -17,7 +17,7 @@
   <form method="post" action="xulydm.php">
     <label for="tendm">Tên DM:</label>
     <input type="text" name="tendm" /><br /> <input type="submit" value="Thêm DM" />
-    <input type="reset" value="Làm Rong" />
+    <input type="reset" value="Làm Rỗng" />
   </form>
 </body>
 
