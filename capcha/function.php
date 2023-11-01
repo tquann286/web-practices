@@ -15,7 +15,7 @@
 
 
     function makePNGCaptcha($captcha){
-        $img = imagecreatefromjpeg("captcha.jpeg");
+        $img = imagecreate(300, 80);
         $fontSize = 30;
         $angle = -7;
         $x = 30;
