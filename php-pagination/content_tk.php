@@ -29,27 +29,17 @@ while ($rows = mysqli_fetch_assoc($resultProducts)) {
 }
 
 echo "<br style='clear:both;' />";
-echo "<div class='pager'>";
+echo "<nav aria-label='Page navigation'><ul class='pagination'>";
 for ($i = 1; $i <= $total; $i++) {
   if ($i != $Spage) {
     if (isset($_GET['keyword'])) {
-      echo "<a href='./?page=" . $i . "&keyword=" . $_GET['keyword'] . "'>" . $i . "</a>";
+      echo "<li class='page-item'><a class='page-link' href='./?page=" . $i . "&keyword=" . $_GET['keyword'] . "'>" . $i . "</a></li>";
     } else {
-      echo "<a href='./?page=" . $i . "'>" . $i . "</a>";
+      echo "<li class='page-item'><a class='page-link' href='./?page=" . $i . "'>" . $i . "</a></li>";
     }
   } else {
-    echo "<span>" . $i . "</span>";
+    echo "<li class='page-item active'><span class='page-link'>" . $i . "</span></li>";
   }
 }
-echo "</div>";
+echo "</ul></nav>";
 ?>
-<style>
-  .pager {
-    background-color: orange;
-    padding: 3px;
-    text-align: center;
-    margin-top: 45px;
-    margin-left: 5px;
-    word-spacing: 10px;
-  }
-</style>
