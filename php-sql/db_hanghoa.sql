@@ -10,7 +10,6 @@
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -40,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `tbl_danhmuc` (
 --
 
 INSERT INTO `tbl_danhmuc` (`id`, `ten`) VALUES
-(3, 'Äiá»‡n Thoáº¡i'),
-(7, 'MÃ¡y Láº¡nh'),
+(3, 'Điện Thoại'),
+(7, 'Máy Tính'),
 (6, 'Laptop');
 
 -- --------------------------------------------------------
@@ -65,24 +64,24 @@ CREATE TABLE IF NOT EXISTS `tbl_sanpham` (
 --
 
 INSERT INTO `tbl_sanpham` (`id`, `ten`, `mota`, `gia`, `id_dm`) VALUES
-(1, 'Sony Xperia Z', 'SiÃªu pháº©m Ä‘iá»‡n thoáº¡i Ä‘áº¿n tá»« Sony                                                                ', 13000000, 3),
-(2, 'HTC One', '            SiÃªu pháº©m Tá»« HTC                    ', 22000000, 3),
-(3, 'Galaxy S4', 'SiÃªu pháº©m cá»§a Samsung', 13000000, 3),
-(4, 'Oppo Find 5', 'SiÃªu pháº©m Ä‘iá»‡n thoáº¡i Ä‘áº¿n tá»« TQ', 9000000, 3),
-(5, 'Nexus 4', 'Äiá»‡n thoáº¡i cáº¥u hÃ¬nh khá»§ng cá»§a Google        ', 10000000, 3),
-(6, 'Optimus G', 'SiÃªu pháº©m Ä‘áº¿n tá»« LG        ', 11000000, 3),
-(7, 'iPhone 5', 'SiÃªu pháº©m cá»§a TÃ¡o        ', 15000000, 3),
-(8, 'Optimus Pro', '            SiÃªu pháº©m full HD cá»§a LG                    ', 13000000, 3),
-(9, 'Xperia ZL', 'SiÃªu pháº©m cá»§a Sony        ', 12000000, 3),
-(10, 'Asus PadFone', 'SiÃªu pháº©m tá»« ASUS        ', 13000000, 3),
-(11, 'Lumia 520', '            Äiá»‡n thoáº¡i WinPhone 8 giÃ¡ ráº» cá»§a Nokia                    ', 3500000, 3),
-(12, 'Lumia 920', 'SiÃªu pháº©m WinPhone 8 cá»§a Nokia        ', 11000000, 3),
-(13, 'Lumia EOS', 'SiÃªu pháº©m Ä‘iá»‡n thoáº¡i WinPhone 8 vá»›i camera khá»§ng 41Mpx cá»§a Nokia        ', 16000000, 3),
-(14, 'Lumia 928', 'SiÃªu pháº©m nÃ¢ng cáº¥p tá»« Lumia 920        ', 12000000, 3),
-(15, 'Sony Vaio T', 'SiÃªu pháº©m Vaio T        ', 12000000, 6),
-(16, 'Dell XPS 12', 'SiÃªu pháº©m laptop cáº£m á»©ng tá»« Dell        ', 21000000, 6),
-(17, 'Asus Vivobook', '                        Laptop cáº£m á»©ng cháº¡y Win8                                ', 17000000, 6),
-(18, 'Asus Transformer Book', '                        Laptop biáº¿n hÃ¬nh.                       ', 28000000, 6);
+(1, 'Sony Xperia Z', 'Siêu phẩm điện thoại đến từ Sony', 13000000, 3),
+(2, 'HTC One', 'Siêu phẩm Từ HTC', 22000000, 3),
+(3, 'Galaxy S4', 'Siêu phẩm của Samsung', 13000000, 3),
+(4, 'Oppo Find 5', 'Siêu phẩm điện thoại đến từ Trung Quốc', 9000000, 3),
+(5, 'Nexus 4', 'Điện thoại cấu hình khủng của Google', 10000000, 3),
+(6, 'Optimus G', 'Siêu phẩm đến từ LG', 11000000, 3),
+(7, 'iPhone 5', 'Siêu phẩm của Táo', 15000000, 3),
+(8, 'Optimus Pro', 'Siêu phẩm full HD của LG', 13000000, 3),
+(9, 'Xperia ZL', 'Siêu phẩm của Sony', 12000000, 3),
+(10, 'Asus PadFone', 'Siêu phẩm từ ASUS', 13000000, 3),
+(11, 'Lumia 520', 'Điện thoại WinPhone 8 giá rẻ của Nokia', 3500000, 3),
+(12, 'Lumia 920', 'Siêu phẩm WinPhone 8 của Nokia', 11000000, 3),
+(13, 'Lumia EOS', 'Siêu phẩm điện thoại WinPhone 8 với camera khủng 41Mpx của Nokia', 16000000, 3),
+(14, 'Lumia 928', 'Siêu phẩm nâng cấp từ Lumia 920', 12000000, 3),
+(15, 'Sony Vaio T', 'Siêu phẩm Vaio T', 12000000, 6),
+(16, 'Dell XPS 12', 'Siêu phẩm laptop cảm ứng từ Dell', 21000000, 6),
+(17, 'Asus Vivobook', 'Laptop cảm ứng chạy Win8', 17000000, 6),
+(18, 'Asus Transformer Book', 'Laptop biến hình', 28000000, 6);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
