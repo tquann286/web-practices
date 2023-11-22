@@ -12,11 +12,11 @@
 
 </head>
 
-
 <body class="bg-body">
 
   <div class="container mt-5">
     <div id="app">
+
       <div class="row mb-4">
         <div class="col-md-6 offset-md-3">
           <h2 class="text-center">
@@ -33,7 +33,20 @@
       </div>
 
       <div id="phoneList" class="row">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
 
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
       </div>
     </div>
   </div>
@@ -62,16 +75,26 @@
       xhr.send();
     }
 
+    const IMAGE_REGEX = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*).[jpg|jpeg|png|gif]{3}/;
+
+
     function search() {
       var searchQuery = document.getElementById('searchInput').value;
 
+      if (!searchQuery.match(IMAGE_REGEX)) {
+        alert("Vui lòng nhập đúng định dạng địa chỉ hình ảnh")
+        return
+      }
+
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function () {
+
         if (xhr.readyState == 4 && xhr.status == 200) {
           // Update the product list with the search results
           var laptops = JSON.parse(xhr.responseText);
           displaySearchResults(laptops);
         }
+
       };
 
       xhr.open('GET', 'search.php?q=' + searchQuery, true);
@@ -79,19 +102,18 @@
     }
 
     function displaySearchResults(laptops) {
-      var laptopList = document.getElementById('phoneList');
-      laptopList.innerHTML = '';
+      var carouselInner = document.querySelector('.carousel-inner');
 
-      laptops.forEach((laptop) => {
+      carouselInner.innerHTML = '';
 
-        var cardHtml =
-          `<div class="col-sm-6 col-md-4 col-lg-3">
-                          <div class="card">
-                              <img src="${laptop.image}" class="card-img-top" alt="image">
-                          </div>
-                      </div>`;
+      laptops.forEach((laptop, index) => {
+        var activeClass = index === 0 ? 'active' : '';
+        var slideHtml =
+          `<div class="carousel-item ${activeClass}">
+            <img src="${laptop.image}" class="d-block w-100" alt="image">
+          </div>`;
 
-        laptopList.insertAdjacentHTML('beforeend', cardHtml);
+        carouselInner.insertAdjacentHTML('beforeend', slideHtml);
       });
     }
   </script>
