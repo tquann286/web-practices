@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tìm kiếm máy tính</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
@@ -81,15 +83,15 @@
             laptopList.innerHTML = '';
 
             laptops.forEach((laptop) => {
-                
+
                 var cardHtml =
-                    `<div class='col-md-4'>
-                        <div class='card'>
-                            <img src='${laptop.anh}' class='card-img-top' alt='image'>
-                            <div class='card-body'>
-                                <h5 class='card-title'>${laptop.ten}</h5>
-                                <p class='card-text'>Price: ${laptop.gia}</p>
-                                <p class='card-text'>Quantity: ${laptop.luot_mua}</p>
+                    `<div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="${laptop.anh}" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title">${laptop.ten}</h5>
+                                <p class="card-text">Price: ${laptop.gia}</p>
+                                <p class="card-text">Quantity: ${laptop.luot_mua}</p>
                             </div>
                         </div>
                     </div>`;

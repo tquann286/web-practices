@@ -7,6 +7,7 @@ class LaptopController
 
     public function displayProducts()
     {
+
         $link = null;
         taoKetNoi($link);
         $query = "select * from tbl_maytinh";
@@ -18,7 +19,7 @@ class LaptopController
             $maytinh = new Laptop($row['id'], $row['ten'], $row['gia'], $row['anh'], $row['luot_mua']);
 
 
-            echo "<div class='col-md-4'>";
+            echo "<div class='col-sm-6 col-md-4 col-lg-3'>";
 
             echo "<div class='card'>";
 
