@@ -91,7 +91,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">${laptop.ten}</h5>
                                 <p class="card-text">Price: ${laptop.gia}</p>
-                                <p class="card-text">Quantity: ${laptop.luot_mua}</p>
+                                <p class="card-text">Quantity: ${laptop.luot_mua} 👤</p>
                             </div>
                         </div>
                     </div>`;

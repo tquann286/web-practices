@@ -27,7 +27,7 @@ class LaptopController
             echo "<div class='card-body'>";
             echo "<h5 class='card-title'>{$maytinh->getTen()}</h5>";
             echo "<p class='card-text'>Price: {$maytinh->getGia()}</p>";
-            echo "<p class='card-text'>Quantity: {$maytinh->getLuotMua()}</p>";
+            echo "<p class='card-text'>Quantity: {$maytinh->getLuotMua()} 👤</p>";
             echo "</div>";
             echo "</div>";
             echo "</div>";
@@ -58,7 +58,7 @@ class LaptopController
             echo "<div class='card-body'>";
             echo "<h5 class='card-title'>{$maytinh->getTen()}</h5>";
             echo "<p class='card-text'>Price: {$maytinh->getGia()}</p>";
-            echo "<p class='card-text'>Quantity: {$maytinh->getLuotMua()}</p>";
+            echo "<p class='card-text'>Quantity: {$maytinh->getLuotMua()} 👤</p>";
             echo "</div>";
             echo "</div>";
             echo "</div>";
