@@ -29,15 +29,15 @@
             </div>
             <div id="phoneList" class="row">
                 <?php
-                require_once("Controllers/PhoneController.php");
+                require_once("Controllers/LaptopController.php");
 
-                $phoneController = new PhoneController();
+                $laptopController = new LaptopController();
 
                 if (isset($_GET['q'])) {
                     $searchQuery = $_GET['q'];
-                    $phoneController->displaySearchResults($searchQuery);
+                    $laptopController->displaySearchResults($searchQuery);
                 } else {
-                    $phoneController->displayProducts();
+                    $laptopController->displayProducts();
                 }
                 ?>
             </div>

@@ -12,9 +12,9 @@ if (isset($_GET['q'])) {
     $result = chayTruyVanTraVeDL($link, $query);
 
     // Fetch and return the results as JSON
-    $phones = array();
+    $laptops = array();
     while ($row = mysqli_fetch_assoc($result)) {
-        $phones[] = array(
+        $laptops[] = array(
             'id' => $row['id'],
             'ten' => $row['ten'],
             'gia' => $row['gia'],
@@ -26,7 +26,7 @@ if (isset($_GET['q'])) {
     giaiPhongBoNho($link, $result);
 
     // Return the results as JSON
-    echo json_encode($phones);
+    echo json_encode($laptops);
 } else {
 
     taoKetNoi($link);
@@ -35,9 +35,9 @@ if (isset($_GET['q'])) {
     $result = chayTruyVanTraVeDL($link, $query);
 
     // Fetch and return the results as JSON
-    $phones = array();
+    $laptops = array();
     while ($row = mysqli_fetch_assoc($result)) {
-        $phones[] = array(
+        $laptops[] = array(
             'id' => $row['id'],
             'ten' => $row['ten'],
             'gia' => $row['gia'],
@@ -49,6 +49,6 @@ if (isset($_GET['q'])) {
     giaiPhongBoNho($link, $result);
 
 
-    echo json_encode($phones);
+    echo json_encode($laptops);
 }
 ?>

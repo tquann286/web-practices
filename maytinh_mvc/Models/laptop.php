@@ -1,5 +1,5 @@
 <?php
-class Phone {
+class Laptop {
     private $id;
     private $ten;
     private $gia;

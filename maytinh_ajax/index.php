@@ -45,8 +45,8 @@
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
-                    var phones = JSON.parse(xhr.responseText);
-                    displaySearchResults(phones);
+                    var laptops = JSON.parse(xhr.responseText);
+                    displaySearchResults(laptops);
                 }
             };
 
@@ -61,8 +61,8 @@
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     // Update the product list with the search results
-                    var phones = JSON.parse(xhr.responseText);
-                    displaySearchResults(phones);
+                    var laptops = JSON.parse(xhr.responseText);
+                    displaySearchResults(laptops);
                 }
             };
 
@@ -70,23 +70,23 @@
             xhr.send();
         }
 
-        function displaySearchResults(phones) {
-            var phoneList = document.getElementById('phoneList');
-            phoneList.innerHTML = '';
+        function displaySearchResults(laptops) {
+            var laptopList = document.getElementById('phoneList');
+            laptopList.innerHTML = '';
 
-            phones.forEach((phone) => {
+            laptops.forEach((laptop) => {
                 var cardHtml =
                     `<div class='col-md-4'>
                         <div class='card'>
-                            <img src='${phone.anh}' class='card-img-top' alt='image'>
+                            <img src='${laptop.anh}' class='card-img-top' alt='image'>
                             <div class='card-body'>
-                                <h5 class='card-title'>${phone.ten}</h5>
-                                <p class='card-text'>Price: ${phone.gia}</p>
+                                <h5 class='card-title'>${laptop.ten}</h5>
+                                <p class='card-text'>Price: ${laptop.gia}</p>
                             </div>
                         </div>
                     </div>`;
 
-                phoneList.innerHTML += cardHtml;
+                laptopList.innerHTML += cardHtml;
             });
         }
     </script>
