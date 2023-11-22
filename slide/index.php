@@ -75,7 +75,7 @@
       xhr.send();
     }
 
-    const IMAGE_REGEX = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*).[jpg|jpeg|png|gif]{3}/;
+    const IMAGE_REGEX = /(ftp|http|https)?:\/\/([www]\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*).[jpg|jpeg|png|gif]{3}/;
 
 
     function search() {
@@ -88,6 +88,7 @@
 
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function () {
+        console.log('xhr: ', xhr)
 
         if (xhr.readyState == 4 && xhr.status == 200) {
           // Update the product list with the search results
