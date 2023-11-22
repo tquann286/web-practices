@@ -7,8 +7,6 @@ class LaptopController {
     public function displayProducts() {
         $link = null;
         taoKetNoi($link);
-
-
         $query = "select * from tbl_maytinh";
         $result = chayTruyVanTraVeDL($link, $query);
 
@@ -29,19 +27,24 @@ class LaptopController {
             echo "</div>";
             echo "</div>";
             echo "</div>";
+
         }
 
         giaiPhongBoNho($link, $result);
+
     }
 
     public function displaySearchResults($searchQuery) {
+
         $link = null;
         taoKetNoi($link);
 
         $query = "select * from tbl_maytinh WHERE ten like '%$searchQuery%'";
+
         $result = chayTruyVanTraVeDL($link, $query);
 
         while ($row = mysqli_fetch_assoc($result)) {
+            
             $maytinh = new Laptop($row['id'], $row['ten'], $row['gia'], $row['anh']);
 
             echo "<div class='col-md-4'>";
