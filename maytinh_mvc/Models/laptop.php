@@ -4,12 +4,14 @@ class Laptop {
     private $ten;
     private $gia;
     private $anh;
+    private $luot_mua;
 
-    public function __construct($id, $ten, $gia, $anh) {
+    public function __construct($id, $ten, $gia, $anh, $luot_mua) {
         $this->id = $id;
         $this->ten = $ten;
         $this->gia = $gia;
         $this->anh = $anh;
+        $this->luot_mua = $luot_mua;
     }
 
     public function getId() {
@@ -26,6 +28,10 @@ class Laptop {
 
     public function getAnh() {
         return $this->anh;
+    }
+
+    public function getLuotMua() {
+        return $this->luot_mua;
     }
 }
 ?>
