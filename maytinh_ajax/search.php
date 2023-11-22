@@ -18,7 +18,8 @@ if (isset($_GET['q'])) {
             'id' => $row['id'],
             'ten' => $row['ten'],
             'gia' => $row['gia'],
-            'anh' => $row['anh']
+            'anh' => $row['anh'],
+            'luot_mua' => $row['luot_mua']
         );
     }
 
@@ -41,7 +42,8 @@ if (isset($_GET['q'])) {
             'id' => $row['id'],
             'ten' => $row['ten'],
             'gia' => $row['gia'],
-            'anh' => $row['anh']
+            'anh' => $row['anh'],
+            'luot_mua' => $row['luot_mua']
         );
     }
 

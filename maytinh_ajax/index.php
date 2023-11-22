@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body class="bg-body">
+
     <div class="container mt-5">
         <div id="app">
             <div class="row mb-4">
@@ -18,6 +20,7 @@
                     <h2 class="text-center">
                         <a href="index.php" style="text-decoration: none; color: inherit;">Tìm kiếm máy tính</a>
                     </h2>
+
                     <div class="input-group">
                         <input type="text" id="searchInput" class="form-control" placeholder="Search..." name="q">
                         <div class="input-group-append">
@@ -26,6 +29,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="phoneList" class="row">
 
             </div>
@@ -45,8 +49,10 @@
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
+
                     var laptops = JSON.parse(xhr.responseText);
                     displaySearchResults(laptops);
+
                 }
             };
 
@@ -75,6 +81,7 @@
             laptopList.innerHTML = '';
 
             laptops.forEach((laptop) => {
+                
                 var cardHtml =
                     `<div class='col-md-4'>
                         <div class='card'>
@@ -82,6 +89,7 @@
                             <div class='card-body'>
                                 <h5 class='card-title'>${laptop.ten}</h5>
                                 <p class='card-text'>Price: ${laptop.gia}</p>
+                                <p class='card-text'>Quantity: ${laptop.luot_mua}</p>
                             </div>
                         </div>
                     </div>`;
